@@ -1,0 +1,68 @@
+/* Particle Background */
+.particles {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('../images/particles.svg') repeat;
+  animation: subtleParticles 60s linear infinite;
+  z-index: 0; pointer-events: none;
+}
+@keyframes subtleParticles {
+  0%   { opacity: 0.1; transform: translate(0,0); }
+  50%  { opacity: 0.2; transform: translate(10px,5px); }
+  100% { opacity: 0.1; transform: translate(0,0); }
+}
+
+/* Parallax Utility */
+.parallax { position: relative; will-change: transform; }
+
+/* Center Coin Animation */
+@keyframes rotate3dLogo {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(360deg); }
+}
+.center-coin img {
+  width: 120px; height: 120px;
+  animation: rotate3dLogo 8s linear infinite;
+  transform-style: preserve-3d;
+}
+
+/* Section Styles */
+.section {
+  width: 90%; max-width: 900px;
+  margin: 60px auto; padding: 30px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  color: #fff; position: relative; z-index: 2;
+}
+.section h2 { margin-top: 0; color: #ff6600; }
+.section ul, .section ol { padding-left: 20px; }
+
+/* CTA Hover */
+a.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255,102,0,0.9);
+}
+
+/* Social Links */
+.social-links a {
+  display: inline-block; margin: 8px;
+  padding: 10px 18px;
+  background: #00CCFF; color: #fff;
+  border-radius: 6px; font-weight: bold;
+  transition: background 0.2s ease;
+}
+.social-links a:hover { background: #0088CC; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .center-coin img,
+  .logo img { width: 80px; height: 80px; }
+  header h1 { font-size: 1.8rem; }
+  a.cta-button {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
