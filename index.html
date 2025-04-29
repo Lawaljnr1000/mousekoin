@@ -20,7 +20,6 @@
       text-align: center;
       padding: 40px 20px;
       position: relative;
-      overflow: hidden;
     }
 
     .logo {
@@ -86,7 +85,6 @@
       font-size: 0.9em;
     }
 
-    /* Floating Coins */
     .coins {
       position: fixed;
       top: 0;
@@ -101,7 +99,7 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      background: url('/mnt/data/8f7d614d-5dca-46b4-b790-2316f76c863b.png') no-repeat center;
+      background: url('https://i.imgur.com/wQYrqck.png') no-repeat center;
       background-size: cover;
       animation: floatCoin 20s linear infinite, sparkle 3s ease-in-out infinite;
       opacity: 0.8;
@@ -157,12 +155,11 @@
 </head>
 <body>
 
-  <!-- Floating Coin Animation Container -->
   <div class="coins"></div>
 
   <header>
     <div class="logo">
-      <img src="/mnt/data/8f7d614d-5dca-46b4-b790-2316f76c863b.png" alt="Mousekoin Logo" />
+      <img src="https://i.imgur.com/wQYrqck.png" alt="Mousekoin Logo" />
     </div>
     <h1>Welcome to Mousekoin</h1>
     <p>The meme coin that's taking the crypto world by storm!</p>
@@ -186,210 +183,6 @@
     <p>&copy; 2025 Mousekoin. All rights reserved.</p>
   </footer>
 
-  <!-- JavaScript to Auto-Generate Coins -->
-  <script>
-    const coinsContainer = document.querySelector('.coins');
-    for (let i = 0; i < 50; i++) {
-      const coin = document.createElement('div');
-      coin.classList.add('coin');
-      coin.style.left = Math.random() * 100 + 'vw';
-      coin.style.animationDuration = (15 + Math.random() * 15) + 's';
-      coin.style.opacity = 0.5 + Math.random() * 0.5;
-      coinsContainer.appendChild(coin);
-    }
-  </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mousekoin – The Meme Coin Revolution</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f0f0f0;
-      overflow-x: hidden;
-      color: #333;
-    }
-
-    header {
-      background-color: #ffcc00;
-      color: #fff;
-      text-align: center;
-      padding: 40px 20px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .logo {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 10px;
-      animation: spin 10s linear infinite;
-    }
-
-    .logo img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-
-    header h1 {
-      margin: 10px 0 5px;
-      font-size: 2.2em;
-    }
-
-    header p {
-      font-size: 1.1em;
-      margin: 0;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
-      position: relative;
-      z-index: 1;
-    }
-
-    .cta-button {
-      display: inline-block;
-      background-color: #ff6600;
-      color: #fff;
-      padding: 14px 28px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      margin-top: 20px;
-      transition: transform 0.3s ease, background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      transform: scale(1.1);
-      background-color: #e65c00;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #333;
-      color: #fff;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      font-size: 0.9em;
-    }
-
-    /* Floating Coins */
-    .coins {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    .coin {
-      position: absolute;
-      width: 40px;
-      height: 40px;
-      background: url('/mnt/data/8f7d614d-5dca-46b4-b790-2316f76c863b.png') no-repeat center;
-      background-size: cover;
-      animation: floatCoin 20s linear infinite, sparkle 3s ease-in-out infinite;
-      opacity: 0.8;
-    }
-
-    @keyframes floatCoin {
-      0% {
-        transform: translateY(100vh) rotate(0deg);
-      }
-      100% {
-        transform: translateY(-120vh) rotate(360deg);
-      }
-    }
-
-    @keyframes sparkle {
-      0%, 100% {
-        transform: scale(1) rotate(0deg);
-      }
-      50% {
-        transform: scale(1.2) rotate(180deg);
-      }
-    }
-
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    @media (max-width: 600px) {
-      .logo {
-        width: 80px;
-        height: 80px;
-      }
-
-      header h1 {
-        font-size: 1.6em;
-      }
-
-      .cta-button {
-        padding: 12px 20px;
-        font-size: 1em;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Floating Coin Animation Container -->
-  <div class="coins"></div>
-
-  <header>
-    <div class="logo">
-      <img src="/mnt/data/8f7d614d-5dca-46b4-b790-2316f76c863b.png" alt="Mousekoin Logo" />
-    </div>
-    <h1>Welcome to Mousekoin</h1>
-    <p>The meme coin that's taking the crypto world by storm!</p>
-  </header>
-
-  <div class="container">
-    <h2>About Mousekoin</h2>
-    <p>Mousekoin is a fun and community-driven meme coin built on the Ethereum blockchain. Our mission is to bring joy and innovation to the crypto space.</p>
-
-    <h3>Features</h3>
-    <ul>
-      <li>Fast and secure transactions</li>
-      <li>Community governance</li>
-      <li>Fun and engaging ecosystem</li>
-    </ul>
-
-    <a href="#" class="cta-button">Buy Mousekoin Now</a>
-  </div>
-
-  <footer>
-    <p>&copy; 2025 Mousekoin. All rights reserved.</p>
-  </footer>
-
-  <!-- JavaScript to Auto-Generate Coins -->
   <script>
     const coinsContainer = document.querySelector('.coins');
     for (let i = 0; i < 50; i++) {
